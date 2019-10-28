@@ -108,7 +108,7 @@ body{
     position: absolute;
     width: 1px;
     height: 1px;
-    background: grey;
+    background: #fff;
     /* transform: rotate(0deg); */
     top: 70%;
     left: 50%;
@@ -119,7 +119,7 @@ body{
     position: absolute;
     width: 1px;
     height: 1px;
-    background: grey;
+    background: #fff;
     /*transform: rotate(90deg);*/
     top: 10vh;
     left: 5%;
@@ -204,7 +204,27 @@ body{
     color: #fff;
     font-size: 26px;
 }
-
+.line3 {
+    transition: 2s all ease; 
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background: #fff;
+    /* transform: rotate(0deg); */
+    top: 70%;
+    right: 50%;
+    opacity = 0;
+}
+.line4 {
+    transition: 3s all ease; 
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background: #fff;
+    /*transform: rotate(90deg);*/
+    top: 10vh;
+    right: 5%;
+}
 
 /* =================================first-flex-line================================ */
 .first-flex-line{
