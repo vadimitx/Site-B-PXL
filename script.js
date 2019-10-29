@@ -16,30 +16,25 @@
                             setTimeout(function(){
                                 var dotPortStyle = getElStyle('.dot-portfolio');
                                 dotPortStyle.width = "10px";
-                                dotPortStyle.height = "10px";
-                                //dot1Style.marginLeft = "-5px";
-                                //dot1Style.marginTop = "-5px";
-                                setTimeout(function(){
+                                dotPortStyle.height = "10px"; 
                                     getElStyle('.dot-portfolio a').opacity = 1;
                                     setTimeout(function(){
                                     var dotPrsStyle = getElStyle('.dot-price');
                                         dotPrsStyle.width = "10px";
-                                        dotPrsStyle.height = "10px";    
-                                            setTimeout(function(){
+                                        dotPrsStyle.height = "10px"; 
                                                 getElStyle('.dot-price a').opacity = 1;
                                                     setTimeout(function(){
                                                         getElStyle('.dot-contacts').width = "10px";
-                                                        getElStyle('.dot-contacts').height = "10px";
-                                                            setTimeout(function(){
+                                                        getElStyle('.dot-contacts').height = "10px";                                                            
                                                             getElStyle('.dot-contacts a').opacity = 1;
                                 },1000);
                            },1000); 
                         },1000);
-                    },1000);
-                },1000);/*after h2 apperance*/
-          },1000); /*after tri1 apperance*/
-        },1000);
-    },1000);
+                    },100);
+                },100);/*after h2 apperance*/
+          //},1000); /*after tri1 apperance*/
+        //},1000);
+    //},1000);
 
 
 // right side timeouthell
@@ -57,6 +52,9 @@
                     setTimeout(function(){
                         getElStyle('.line4').height = "355px";
                         setTimeout(function(){
+                             getElStyle('.dot-reviews').width = "10px";
+                              getElStyle('.dot-reviews').height = "10px";                                                            
+                                 getElStyle('.dot-reviews a').opacity = 1;
                    },2000);
                 },2000); 
             },2000);
