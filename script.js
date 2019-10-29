@@ -1,11 +1,11 @@
  // left side timeouthell
         window.onload = function(){
-            //document.querySelector('.dot1').style.background = "red";
-
-           document.querySelector('.triangle1').style.left = "5%";
-           console.log('.style.left');
-          document.querySelector('.triangle1').style.opacity = 1;
-            setTimeout(function(){
+            document.querySelector('.triangle1').style.left = "100%";
+                  document.querySelector('.triangle1').style.opacity = 1;
+                  //document.querySelector('.triangle1').style.transform = "rotate(7200deg)";
+                    setTimeout(function(){
+                        document.querySelector('.triangle1').style.left = "5%";
+                        setTimeout(function(){
                         var line1Style = getElStyle('.line1');
                         line1Style.width = "555px";
                         line1Style.left = "5%";
@@ -32,17 +32,20 @@
                         },1000);
                     },100);
                 },100);/*after h2 apperance*/
-          //},1000); /*after tri1 apperance*/
+          },1000); /*after tri1 apperance*/
         //},1000);
     //},1000);
 
 
 // right side timeouthell
- document.querySelector('.triangle2').style.right = "0%";
-    //document.querySelector('.triangle2').style.transform = "rotate(360deg)";
+ document.querySelector('.triangle2').style.right = "100%";
+    document.querySelector('.triangle2').style.transform = "rotate(3600deg)";
         document.querySelector('.triangle2').style.opacity = 1;
-        // getElStyle('.triangle2').opacity = 1;
+        setTimeout(function(){
+         getElStyle('.triangle2').right = "";
             setTimeout(function(){
+                getElStyle('.triangle2').right = "0%";
+                setTimeout(function(){
                 getElStyle('.indigo-fone').opacity = 1;
                 setTimeout(function(){
                 var line3Style = getElStyle('.line3');
@@ -55,10 +58,12 @@
                              getElStyle('.dot-reviews').width = "10px";
                               getElStyle('.dot-reviews').height = "10px";                                                            
                                  getElStyle('.dot-reviews a').opacity = 1;
-                   },2000);
-                },2000); 
-            },2000);
+                   },1000);
+                },1000); 
+            },1000);
         },1000);
+        },1000);
+            },1000);
 
 }
 
