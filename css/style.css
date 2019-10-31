@@ -284,9 +284,9 @@ body{
 
 /* ===================================third-btn-line========================== */
 .third-btn-line{
+    width: 100%;
     position: absolute;
-    bottom: 20%;
-    left: 20%;
+    bottom: 10%;
     display: flex;
     justify-content: space-around;
     align-items: center;
