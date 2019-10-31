@@ -1,8 +1,7 @@
- // left side timeouthell
+ // left side timeouthell========================================
         window.onload = function(){
             document.querySelector('.triangle1').style.left = "100%";
-                  document.querySelector('.triangle1').style.opacity = 1;
-                  //document.querySelector('.triangle1').style.transform = "rotate(7200deg)";
+                  document.querySelector('.triangle1').style.opacity = 1;                
                     setTimeout(function(){
                         document.querySelector('.triangle1').style.left = "5%";
                         setTimeout(function(){
@@ -37,13 +36,10 @@
     //},1000);
 
 
-// right side timeouthell
- document.querySelector('.triangle2').style.right = "100%";
-    document.querySelector('.triangle2').style.transform = "rotate(3600deg)";
-        document.querySelector('.triangle2').style.opacity = 1;
-        setTimeout(function(){
-         getElStyle('.triangle2').right = "";
-            setTimeout(function(){
+// right side timeouthell============================================
+ document.querySelector('.triangle2').style.right = "0%";   
+    document.querySelector('.triangle2').style.opacity = 1;
+           setTimeout(function(){
                 getElStyle('.triangle2').right = "0%";
                 setTimeout(function(){
                 getElStyle('.indigo-fone').opacity = 1;
@@ -62,10 +58,20 @@
                 },1000); 
             },1000);
         },1000);
-        },1000);
-            },1000);
+     },1000);
+//},1000);
 
+//pentagon========================================================
+document.querySelector('.pentagon img').style.transform = "rotate(720deg)";
+document.querySelector('.pentagon img').style.opacity = 0;
+    setTimeout(function(){        
+        document.querySelector('.pentagon').style.bottom = "10%";
+        document.querySelector('.pentagon img').style.opacity = 1;
+        document.querySelector('.pentagon img').style.transform = "rotate(7200deg)";
+        },1000);
 }
+ 
+document.querySelector('img').addEventListener('click', openImageWindow, false);
 
         function getElStyle(el){
             return document.querySelector(el).style;
