@@ -85,7 +85,7 @@ body{
     position: absolute;
     opacity: 0;
     left: -100%;
-    top: 8%;
+    top: 100px;
     width: 560px;
     height: 160px;
     background: url(../img/triangle1.png);
@@ -107,8 +107,8 @@ body{
     width: 1px;
     height: 1px;
     background: #fff;
-    /* transform: rotate(0deg); */
-    top: 70%;
+    transform: rotate(-10deg);
+    top: 130px;
     left: 50%;
     opacity = 0;
 }
@@ -119,8 +119,8 @@ body{
     height: 1px;
     background: #fff;
     /*transform: rotate(90deg);*/
-    top: 10vh;
-    left: 5%;
+    top: 229px;
+    left: 70px;
 }
 .dot-portfolio {
     transition: 0.1s all ease;   
@@ -128,11 +128,10 @@ body{
     height: 1px;
     background: #fff;
     position: absolute;
-    bottom: 150px;
-    left: 10%;
+    bottom: 350px;
+    left: 65px;
     border-radius: 50%;
 }
-
 .dot-portfolio a {
     transition: 0.1s all ease;
     position: absolute;
@@ -146,8 +145,8 @@ body{
     height: 1px;
     background: #fff;
     position: absolute;
-    bottom: 250px;
-    left: 10%;
+    bottom: 300px;
+    left: 65px;
     border-radius: 50%;
 }
 .dot-price a {
@@ -163,8 +162,8 @@ body{
     height: 1px;
     background: #fff;
     position: absolute;
-    bottom: 350px;
-    left: 10%;
+    bottom: 250px;
+    left: 65px;
     border-radius: 50%;
 }
 .dot-contacts a{
@@ -208,9 +207,9 @@ body{
     width: 1px;
     height: 1px;
     background: #fff;
-    /* transform: rotate(0deg); */
-    top: 70%;
-    right: 50%;
+    transform: rotate(10deg);
+    top: 130px;
+    left: 50%;
     opacity = 0;
 }
 .line4 {
@@ -220,8 +219,8 @@ body{
     height: 1px;
     background: #fff;
     /*transform: rotate(90deg);*/
-    top: 10vh;
-    right: 5%;
+    top: 230px;
+    right: 70px;
 }
 .dot-reviews{
    transition: 0.1s all ease;   
@@ -229,8 +228,8 @@ body{
     height: 1px;
     background: #fff;
     position: absolute;
-    bottom: 350px;
-    right: 10%;
+    bottom: 300px;
+    right: 65px;
     border-radius: 50%;
 }
 .dot-reviews a{
@@ -242,21 +241,13 @@ body{
 }
 
 /* =================================first-flex-line================================ */
-.first-flex-line{
-    position: absolute;
-    top: 20%;
-    left: 20%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: white;
-}
+
 
 /* =================================second-flex-line============================ */
 .second-flex-line{
     position: absolute;
-    top: 40%;
-    left: 20%;
+   top: 200px;
+    left: 200px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -266,7 +257,7 @@ body{
 /* =====================================reviews================================ */
 .reviews{
     position: absolute;
-    top: 60%;
+    top: 300px;
     right: 10%;
     color: white;
 }
@@ -274,7 +265,7 @@ body{
 /* =====================================pentagon============================== */
 .pentagon{
     position: absolute;
-    bottom: 20%;
+    bottom: 300px;
     right: 10%;
 }
 .pentagon img{
@@ -286,7 +277,7 @@ body{
 .third-btn-line{
     width: 100%;
     position: absolute;
-    bottom: 10%;
+    bottom: 200px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -312,4 +303,8 @@ body{
 }
 .mail{
    margin-left: 20px;
+}
+
+.menu{
+  display: inline-block;
 }
