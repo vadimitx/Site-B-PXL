@@ -1,4 +1,5 @@
 * {
+    width: 920;
     font-family: 'Montserrat', sans-serif;
     margin: 0;    /* (сброс стилей и отступов) */
     padding: 0;    /* (сброс стилей и отступов) */
@@ -10,7 +11,7 @@ a {
     text-decoration: none;    /* (убирает подчеркивание ссылок) */
 }
 body{
-    /* width: 1200px; */
+    /* width: 920px; */
     background: black;
     margin:0 auto;
 }
@@ -58,7 +59,7 @@ body{
     top: 0%;
     background-repeat: no-repeat;
     width: 100%;
-    height: 30vh;
+    height: 220px;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -85,12 +86,13 @@ body{
     position: absolute;
     opacity: 0;
     left: -100%;
-    top: 100px;
+    top: 80px;
     width: 560px;
     height: 160px;
     background: url(../img/triangle1.png);
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 1;
 }
 .triangle1 h2{
     transition: 2s all ease;
@@ -108,7 +110,7 @@ body{
     height: 1px;
     background: #fff;
     transform: rotate(-10deg);
-    top: 130px;
+    top: 150px;
     left: 50%;
     opacity = 0;
 }
@@ -119,42 +121,8 @@ body{
     height: 1px;
     background: #fff;
     /*transform: rotate(90deg);*/
-    top: 229px;
-    left: 70px;
-}
-.dot-portfolio {
-    transition: 0.1s all ease;   
-    width: 1px;
-    height: 1px;
-    background: #fff;
-    position: absolute;
-    bottom: 350px;
-    left: 65px;
-    border-radius: 50%;
-}
-.dot-portfolio a {
-    transition: 0.1s all ease;
-    position: absolute;
-    left: 20px;
-    color: green;
-    opacity: 0;
-}
-.dot-price{
-    transition: .1s all ease;   
-    width: 1px;
-    height: 1px;
-    background: #fff;
-    position: absolute;
-    bottom: 300px;
-    left: 65px;
-    border-radius: 50%;
-}
-.dot-price a {
-    transition: 0.1s all ease;
-    position: absolute;
-    left: 20px;
-    color: yellow;
-    opacity: 0;
+    top: 296px;
+    left: 117px;
 }
 .dot-contacts{
     transition: 0.1s all ease;   
@@ -162,8 +130,8 @@ body{
     height: 1px;
     background: #fff;
     position: absolute;
-    bottom: 250px;
-    left: 65px;
+    bottom: 300px;
+    left: 112px;
     border-radius: 50%;
 }
 .dot-contacts a{
@@ -173,19 +141,56 @@ body{
     color: blue;
     opacity: 0;
 }
+
+.dot-price{
+    transition: .1s all ease;   
+    width: 1px;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    bottom: 250px;
+    left: 112px;
+    border-radius: 50%;
+}
+.dot-price a {
+    transition: 0.1s all ease;
+    position: absolute;
+    left: 20px;
+    color: yellow;
+    opacity: 0;
+}
+.dot-portfolio {
+    transition: 0.1s all ease;   
+    width: 1px;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    bottom: 200px;
+    left: 112px;
+    border-radius: 50%;
+}
+.dot-portfolio a {
+    transition: 0.1s all ease;
+    position: absolute;
+    left: 20px;
+    color: green;
+    opacity: 0;
+}
+
 /* --------------------------------right side timeouthell---------------------- */
 .triangle2{
     transition: 2s all ease;
     position: absolute;
     opacity: 0;
     right: -100%;
-    top: -2%;
+    /* top: -2%; */
     /* width: 500px; */
     /* height: 340px; */
     /* background: url(../img/triangle2.png); */
     background-repeat: no-repeat;
     background-size: cover;
     transform: rotate(0deg);
+    z-index: 1;
 }
 .triangle2 img {
     height: 250px;
@@ -208,7 +213,7 @@ body{
     height: 1px;
     background: #fff;
     transform: rotate(10deg);
-    top: 130px;
+    top: 150px;
     left: 50%;
     opacity = 0;
 }
@@ -219,8 +224,8 @@ body{
     height: 1px;
     background: #fff;
     /*transform: rotate(90deg);*/
-    top: 230px;
-    right: 70px;
+    top: 296px;
+    right: 102px;
 }
 .dot-reviews{
    transition: 0.1s all ease;   
@@ -228,8 +233,8 @@ body{
     height: 1px;
     background: #fff;
     position: absolute;
-    bottom: 300px;
-    right: 65px;
+    bottom: 200px;
+    right: 98px;
     border-radius: 50%;
 }
 .dot-reviews a{
@@ -246,8 +251,8 @@ body{
 /* =================================second-flex-line============================ */
 .second-flex-line{
     position: absolute;
-   top: 200px;
-    left: 200px;
+   top: 500px;
+    left: 500px;
     display: flex;
     justify-content: space-around;
     align-items: center;

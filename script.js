@@ -3,31 +3,38 @@ window.onload = function(){
 document.querySelector('.triangle1').style.left = "100%";
 document.querySelector('.triangle1').style.opacity = 1;                
 setTimeout(function(){
-    document.querySelector('.triangle1').style.left = "5%";
+    document.querySelector('.triangle1').style.left = "7%";
     setTimeout(function(){
         var line1Style = getElStyle('.line1');
         // line1Style.width = "560px";
         line1Style.width = "45%";
-        line1Style.top = "180px";
+        line1Style.top = "220px";
         line1Style.left = "5.8%";
         line1Style.opacity = "1";
-
-
+        
         var line3Style = getElStyle('.line3');
         // line3Style.width = "555px";
         line3Style.width = "45%";
-        line3Style.top = "180px";
+        line3Style.top = "220px";
         line3Style.right = "6%";
         line3Style.opacity = "1";
-
+        console.log(1);
         setTimeout(function(){
-            getElStyle('.line2').height = "250px";
-            //getElStyle('.line2').opacity = "0";
-            getElStyle('.line4').height = "300px";
+            getElStyle('.line2').height = "48%";
+            getElStyle('.line4').height = "48%";
+            console.log(2);
             setTimeout(addDotsStyles2,1000);
-        },1000);
-    },1000);/*after h2 apperance*/
-},1000); /*after tri1 apperance*/
+        },2000);
+
+        // setTimeout(function(){
+        //     setTimeout(function(){
+        //         getElStyle('.line2').height = "48%";
+        //         getElStyle('.line4').height = "48%";
+        //         setTimeout(addDotsStyles2,1000);
+        //     },1000);
+        // },1000);
+    },1000);
+},1000);
 
 //},1000);
 //},1000);
@@ -75,7 +82,7 @@ setTimeout(function(){
         // document.querySelector('.pentagon').style.bottom = "10%";
         // document.querySelector('.pentagon img').style.opacity = 1;
         document.querySelector('.pentagon img').style.transform = "rotate("+currentDeg+"deg)";
-    },10);
+    },50);
 },1000);
     // var currentDeg = 0;
     // setInterval(function(){
@@ -116,6 +123,7 @@ function addDotsStyles2(){
     dotPortStyle.width = "10px";
     dotPortStyle.height = "10px"; 
     getElStyle('.dot-contacts a').opacity = 1;
+    console.log(3);
     setTimeout(addDotsStyles,1000); 
 }
 
@@ -138,7 +146,7 @@ function addDotsStyles2(){
 // }
 
 // sss = 2222;
-// var badString = "Дядя Инокентий плохой ваще";
+// var badString = "Кто плохой ваще";
 
 // var cleared = clearStr(badString);
 // console.log(cleared.toUpperCase());
