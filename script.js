@@ -1,4 +1,4 @@
- // left side timeouthell========================================
+// left side timeouthell========================================
 window.onload = function(){
 document.querySelector('.triangle1').style.left = "100%";
 document.querySelector('.triangle1').style.opacity = 1;                
@@ -36,10 +36,6 @@ setTimeout(function(){
     },1000);
 },1000);
 
-//},1000);
-//},1000);
-
-
 // right side timeouthell============================================
 document.querySelector('.triangle2').style.right = "0%";   
 document.querySelector('.triangle2').style.opacity = 1;
@@ -48,33 +44,38 @@ setTimeout(function(){
     setTimeout(function(){
         getElStyle('.indigo-fone').opacity = 1;
         setTimeout(function(){
-            // var line3Style = getElStyle('.line3');
-            // // line3Style.width = "555px";
-            // line3Style.width = "45%";
-            // line3Style.top = "180px";
-            // line3Style.right = "6%";
-            // line3Style.opacity = "1";
-            // setTimeout(function(){
-            //     getElStyle('.line4').height = "300px";
-            //     setTimeout(function(){
-            //         getElStyle('.dot-reviews').width = "10px";
-            //         getElStyle('.dot-reviews').height = "10px";                                                            
-            //         getElStyle('.dot-reviews a').opacity = 1;
-            //     },1000);
-            // },1000); 
+            getElStyle('.one-block').opacity = 1;
+            setTimeout(function(){
+                getElStyle('.two-block').opacity = 1;
+                setTimeout(function(){
+                    getElStyle('.btn-line').opacity = 1;
+                    // var line3Style = getElStyle('.line3');
+                    // // line3Style.width = "555px";
+                    // line3Style.width = "45%";
+                    // line3Style.top = "180px";
+                    // line3Style.right = "6%";
+                    // line3Style.opacity = "1";
+                    // setTimeout(function(){
+                    //     getElStyle('.line4').height = "300px";
+                    //     setTimeout(function(){
+                    //         getElStyle('.dot-reviews').width = "10px";
+                    //         getElStyle('.dot-reviews').height = "10px";                                                            
+                    //         getElStyle('.dot-reviews a').opacity = 1;
+                    //     },1000);
+                    // },1000); 
+                },1000);
+            },1000);
         },1000);
     },1000);
 },1000);
 
-//},1000);
-
 //pentagon========================================================
-document.querySelector('.pentagon img').style.transform = "rotate(720deg)";
+document.querySelector('.pentagon img').style.transform = "rotate(360deg)";
 document.querySelector('.pentagon img').style.opacity = 0;
 setTimeout(function(){        
-    document.querySelector('.pentagon').style.bottom = "10%";
+    document.querySelector('.pentagon').style.bottom = "0%";
     document.querySelector('.pentagon img').style.opacity = 1;
-    document.querySelector('.pentagon img').style.transform = "rotate(7200deg)";
+    document.querySelector('.pentagon img').style.transform = "rotate(1000deg)";
 
     var currentDeg = 0;
     setInterval(function(){
@@ -96,46 +97,66 @@ setTimeout(function(){
 }
  
 //document.querySelector('img').addEventListener('click', openImageWindow, false);
-
 function getElStyle(el){
     return document.querySelector(el).style;
 }
 
 function addLineStyles(){
-    getElStyle('.dot-portfolio').width = "10px";
-    getElStyle('.dot-portfolio').height = "10px";                                                            
+    getElStyle('.dot-portfolio').width = "20px";
+    getElStyle('.dot-portfolio').height = "20px";                                                            
     getElStyle('.dot-portfolio a').opacity = 1;
-    getElStyle('.dot-reviews').width = "10px";
-    getElStyle('.dot-reviews').height = "10px";                                                            
+    getElStyle('.dot-reviews').width = "20px";
+    getElStyle('.dot-reviews').height = "20px";                                                            
     getElStyle('.dot-reviews a').opacity = 1;
 }
 
 function addDotsStyles(){
     var dotPrsStyle = getElStyle('.dot-price');
-    dotPrsStyle.width = "10px";
-    dotPrsStyle.height = "10px"; 
+    dotPrsStyle.width = "20px";
+    dotPrsStyle.height = "20px"; 
     getElStyle('.dot-price a').opacity = 1;
-    setTimeout(addLineStyles,1000);
+    setTimeout(addLineStyles,100);
 }
 
 function addDotsStyles2(){
     var dotPortStyle = getElStyle('.dot-contacts');//portfolio
-    dotPortStyle.width = "10px";
-    dotPortStyle.height = "10px"; 
+    dotPortStyle.width = "20px";
+    dotPortStyle.height = "20px"; 
     getElStyle('.dot-contacts a').opacity = 1;
     console.log(3);
-    setTimeout(addDotsStyles,1000); 
+    setTimeout(addDotsStyles,100); 
 }
 
-// // function expression
+//resizeImg=====================================================
+
+ // function resizeImg (img)
+ //      {
+ //        var resize = 150; // resize amount in percentage
+ //        var origH  = 61;  // original image height
+ //        var origW  = 250; // original image width
+ //        var mouseX = event.x;
+ //        var mouseY = event.y;
+ //        var newH   = origH * (resize / 100);
+ //        var newW   = origW * (resize / 100);
+
+ //        // Set the new width and height
+ //        img.style.height = newH;
+ //        img.style.width  = newW;
+
+ //        var c = img.parentNode;
+
+ //        // Work out the new center
+ //        c.scrollLeft = (mouseX * (resize / 100)) - (newW / 2) / 2;
+ //        c.scrollTop  = (mouseY * (resize / 100)) - (newH / 2) / 2;
+ //      }
+
+// function expression============================================
 // var expressionFunc = function(param) {
 //     console.log(param);
 //     return 'returned string';
 // }
 
-
 // console.log(expressionFunc('param string'));
-
 
 // var ret = declarativeFunc(555);
 // console.log(ret);
@@ -146,7 +167,7 @@ function addDotsStyles2(){
 // }
 
 // sss = 2222;
-// var badString = "Кто плохой ваще";
+// var badString = "Кот плохой";
 
 // var cleared = clearStr(badString);
 // console.log(cleared.toUpperCase());
@@ -161,3 +182,6 @@ function addDotsStyles2(){
 
 //     // return str.replace(/плохой/,'***');
 // }
+
+
+

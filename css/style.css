@@ -4,8 +4,7 @@
     margin: 0;    /* (сброс стилей и отступов) */
     padding: 0;    /* (сброс стилей и отступов) */
     transition: .3s all ease;    /* (плавные выделения hover) */
-    /* box-sizing: border-box; */
-    /* ширина, которую мы ставим, относится к элементу полностью, включая border и padding) */ 
+    /* box-sizing: border-box;  (размеры относятся к элементу полностью, включая border и padding) */ 
 }
 a {
     text-decoration: none;    /* (убирает подчеркивание ссылок) */
@@ -20,7 +19,7 @@ body{
 
 .black-line{
     background: black;
-    line-height: 20px;
+    /* line-height: 20px; */
 } 
 .social-buttons{
    text-align: center;
@@ -34,7 +33,7 @@ body{
 .social-buttons img {
     width: 30px;
     height: 30px;
-    margin: 10px 10px 10px 10px;
+    margin: 10px;
     cursor: pointer;
 }
 
@@ -59,7 +58,7 @@ body{
     top: 0%;
     background-repeat: no-repeat;
     width: 100%;
-    height: 220px;
+    height: 250px;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -86,7 +85,7 @@ body{
     position: absolute;
     opacity: 0;
     left: -100%;
-    top: 80px;
+    top: 90px;
     width: 560px;
     height: 160px;
     background: url(../img/triangle1.png);
@@ -130,16 +129,17 @@ body{
     height: 1px;
     background: #fff;
     position: absolute;
-    bottom: 300px;
-    left: 112px;
+    bottom: 320px;
+    left: 108px;
     border-radius: 50%;
 }
 .dot-contacts a{
     transition: 0.1s all ease;
     position: absolute;
-    left: 20px;
-    color: blue;
+    left: 50px;
+    color: #825889;
     opacity: 0;
+    font-size: 30px;
 }
 
 .dot-price{
@@ -148,16 +148,17 @@ body{
     height: 1px;
     background: #fff;
     position: absolute;
-    bottom: 250px;
-    left: 112px;
+    bottom: 260px;
+    left: 108px;
     border-radius: 50%;
 }
 .dot-price a {
     transition: 0.1s all ease;
     position: absolute;
-    left: 20px;
-    color: yellow;
+    left: 50px;
+    color: #825889;
     opacity: 0;
+    font-size: 30px;
 }
 .dot-portfolio {
     transition: 0.1s all ease;   
@@ -166,23 +167,25 @@ body{
     background: #fff;
     position: absolute;
     bottom: 200px;
-    left: 112px;
+    left: 108px;
     border-radius: 50%;
 }
 .dot-portfolio a {
     transition: 0.1s all ease;
     position: absolute;
-    left: 20px;
-    color: green;
+    left: 50px;
+    color: #825889;
     opacity: 0;
+    font-size: 30px;
 }
 
 /* --------------------------------right side timeouthell---------------------- */
-.triangle2{
+.triangle2 {
     transition: 2s all ease;
     position: absolute;
     opacity: 0;
     right: -100%;
+    top: 40px;
     /* top: -2%; */
     /* width: 500px; */
     /* height: 340px; */
@@ -234,82 +237,107 @@ body{
     background: #fff;
     position: absolute;
     bottom: 200px;
-    right: 98px;
+    right: 94px;
     border-radius: 50%;
 }
 .dot-reviews a{
     transition: 0.1s all ease;
     position: absolute;
-    right: 20px;
-    color: red;
+    right: 50px;
+    color: #825889;
     opacity: 0;
+    font-size: 30px;
 }
 
-/* =================================first-flex-line================================ */
-
-
-/* =================================second-flex-line============================ */
-.second-flex-line{
+/* =================================flex-line============================ */
+.flex-line{
     position: absolute;
-   top: 500px;
-    left: 500px;
+    top: 400px;
+    right: 150px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: white;
 }
-
-/* =====================================reviews================================ */
-.reviews{
-    position: absolute;
-    top: 300px;
-    right: 10%;
-    color: white;
+.flex-line-block h1, p {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
 }
+.one-block, .two-block {
+    border-right: 10px solid #933075;
+    margin-bottom: 30px;
+    opacity: 0;
+}
+
 
 /* =====================================pentagon============================== */
 .pentagon{
     position: absolute;
-    bottom: 300px;
-    right: 10%;
+    bottom: 15%;
+    right: 15%;
 }
 .pentagon img{
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
 }
 
-/* ===================================third-btn-line========================== */
-.third-btn-line{
+/* btn-line =================================================== */
+.btn-line{
     width: 100%;
     position: absolute;
-    bottom: 200px;
+    bottom: 100px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    color: white;
+    opacity: 0;
 }
+.btn-line a {
+    color: white;
+    font-weight: 800;
+    margin-left: 110px;
+    margin-right: 100px;
+    font-size: 20px;
+}
+
+/* bottom-white-line========================================== */
+.bottom-white-line{
+    /* color: rgb(); */
+    background: #fff;
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+}
+
+
 /* =====================================footer=============================== */
 .footer-line{
     background: black;
-    height: 100px;
+    /* height: 100px; */
     color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.logo-copyright{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo-pixel img{
+    height: 50px;
+    width: 70px;
 }
 .phone-mail{
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
 .phone{
     margin-right: 20px;
 }
 .mail{
    margin-left: 20px;
-}
-
-.menu{
-  display: inline-block;
 }
