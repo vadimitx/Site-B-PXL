@@ -7,21 +7,21 @@ setTimeout(function(){
     setTimeout(function(){
         var line1Style = getElStyle('.line1');
         // line1Style.width = "560px";
-        line1Style.width = "45%";
-        line1Style.top = "220px";
-        line1Style.left = "5.8%";
+        line1Style.width = "43%";
+        line1Style.top = "222px";
+        line1Style.left = "8%";
         line1Style.opacity = "1";
         
         var line3Style = getElStyle('.line3');
         // line3Style.width = "555px";
-        line3Style.width = "45%";
+        line3Style.width = "42%";
         line3Style.top = "220px";
-        line3Style.right = "6%";
+        line3Style.right = "10%";
         line3Style.opacity = "1";
         console.log(1);
         setTimeout(function(){
-            getElStyle('.line2').height = "48%";
-            getElStyle('.line4').height = "48%";
+            getElStyle('.line2').height = "500px";
+            getElStyle('.line4').height = "500px";
             console.log(2);
             setTimeout(addDotsStyles2,1000);
         },2000);
@@ -73,7 +73,7 @@ setTimeout(function(){
 document.querySelector('.pentagon img').style.transform = "rotate(360deg)";
 document.querySelector('.pentagon img').style.opacity = 0;
 setTimeout(function(){        
-    document.querySelector('.pentagon').style.bottom = "0%";
+    document.querySelector('.pentagon').style.bottom = "5%";
     document.querySelector('.pentagon img').style.opacity = 1;
     document.querySelector('.pentagon img').style.transform = "rotate(1000deg)";
 

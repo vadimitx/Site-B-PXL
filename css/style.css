@@ -10,7 +10,7 @@ a {
     text-decoration: none;    /* (убирает подчеркивание ссылок) */
 }
 body{
-    /* width: 920px; */
+    width: 1900px;
     background: black;
     margin:0 auto;
 }
@@ -120,45 +120,8 @@ body{
     height: 1px;
     background: #fff;
     /*transform: rotate(90deg);*/
-    top: 296px;
-    left: 117px;
-}
-.dot-contacts{
-    transition: 0.1s all ease;   
-    width: 1px;
-    height: 1px;
-    background: #fff;
-    position: absolute;
-    bottom: 320px;
-    left: 108px;
-    border-radius: 50%;
-}
-.dot-contacts a{
-    transition: 0.1s all ease;
-    position: absolute;
-    left: 50px;
-    color: #825889;
-    opacity: 0;
-    font-size: 30px;
-}
-
-.dot-price{
-    transition: .1s all ease;   
-    width: 1px;
-    height: 1px;
-    background: #fff;
-    position: absolute;
-    bottom: 260px;
-    left: 108px;
-    border-radius: 50%;
-}
-.dot-price a {
-    transition: 0.1s all ease;
-    position: absolute;
-    left: 50px;
-    color: #825889;
-    opacity: 0;
-    font-size: 30px;
+    top: 294px;
+    left: 156px;
 }
 .dot-portfolio {
     transition: 0.1s all ease;   
@@ -166,8 +129,8 @@ body{
     height: 1px;
     background: #fff;
     position: absolute;
-    bottom: 200px;
-    left: 108px;
+    top: 780px;
+    left: 145px;
     border-radius: 50%;
 }
 .dot-portfolio a {
@@ -178,7 +141,42 @@ body{
     opacity: 0;
     font-size: 30px;
 }
-
+.dot-price{
+    transition: .1s all ease;   
+    width: 1px;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: 720px;
+    left: 145px;
+    border-radius: 50%;
+}
+.dot-price a {
+    transition: 0.1s all ease;
+    position: absolute;
+    left: 50px;
+    color: #825889;
+    opacity: 0;
+    font-size: 30px;
+}
+.dot-contacts{
+    transition: 0.1s all ease;   
+    width: 1px;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: 660px;
+    left: 145px;
+    border-radius: 50%;
+}
+.dot-contacts a{
+    transition: 0.1s all ease;
+    position: absolute;
+    left: 50px;
+    color: #825889;
+    opacity: 0;
+    font-size: 30px;
+}
 /* --------------------------------right side timeouthell---------------------- */
 .triangle2 {
     transition: 2s all ease;
@@ -227,8 +225,8 @@ body{
     height: 1px;
     background: #fff;
     /*transform: rotate(90deg);*/
-    top: 296px;
-    right: 102px;
+    top: 291px;
+    right: 157px;
 }
 .dot-reviews{
    transition: 0.1s all ease;   
@@ -236,8 +234,8 @@ body{
     height: 1px;
     background: #fff;
     position: absolute;
-    bottom: 200px;
-    right: 94px;
+    top: 780px;
+    right: 147px;
     border-radius: 50%;
 }
 .dot-reviews a{
@@ -253,7 +251,7 @@ body{
 .flex-line{
     position: absolute;
     top: 400px;
-    right: 150px;
+    right: 200px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -263,6 +261,12 @@ body{
     display: flex;
     justify-content: flex-end;
     margin: 10px;
+}
+.flex-line-block p {
+    font-size: 20px;
+    ont-weight: 400;
+    margin-top: 10px;
+
 }
 .one-block, .two-block {
     border-right: 10px solid #933075;
@@ -295,8 +299,8 @@ body{
 .btn-line a {
     color: white;
     font-weight: 800;
-    margin-left: 110px;
-    margin-right: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
     font-size: 20px;
 }
 
